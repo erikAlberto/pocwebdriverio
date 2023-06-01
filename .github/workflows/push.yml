@@ -10,7 +10,7 @@ jobs:
       uses: docker/build-push-action@v1
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
-        PASSWORD: ${{ SECRETS.DOCKER_PASSWORD }}
+        PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         reposiroty: ${{ github.pocwebdriverio }}
         tag_with_ref: true
         tag_with_sha: true
