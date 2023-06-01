@@ -1,4 +1,4 @@
-const suma = require('D:/poc-2/for_testing.js');
+const suma = require('../step-definitions/for_testing');
 test('suma', () => {
     const result = suma(2, 2);
 
