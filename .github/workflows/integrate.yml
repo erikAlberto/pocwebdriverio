@@ -14,5 +14,4 @@ jobs:
           reposiroty: ${{ github.pocwebdriverio }}
       - run: npm ci
       - run: npm install
-      - run: npm run wdio
-      - run: npm run report
+      - run: npm run unit-test
