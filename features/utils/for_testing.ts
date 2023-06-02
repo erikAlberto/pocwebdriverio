@@ -1,4 +1,6 @@
-function suma(a, b){
+
+
+export function suma (a: any, b: any){
     return a + b;
 }
 
