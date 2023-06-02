@@ -1,7 +1,7 @@
 
 
-export function suma (a: any, b: any){
+export function suma (a: number, b: number){
     return a + b;
 }
 
-module.exports = suma;
+//module.exports = suma;
