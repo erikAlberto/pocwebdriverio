@@ -19,7 +19,7 @@
   },
   "scripts": {
     "unit-test": "jest --forceExit --coverage --verbose",
-    "lint": "npm run lint",
+    "lint": "eslint . --ext .ts",
     "wdio": "wdio run ./wdio.conf.ts",
     "report": "allure generate allure-results --clean && allure open"
   },

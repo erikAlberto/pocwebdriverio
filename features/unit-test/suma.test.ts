@@ -1,5 +1,4 @@
-const { suma } = require("../utils/for_testing");
-
+import { suma } from "../utils/for_testing";
 
 describe('sum to numbers', () => {
     test('suma', () => {
@@ -7,5 +6,4 @@ describe('sum to numbers', () => {
     
         expect(actualResult).toBe(4);
     })
-
 })
