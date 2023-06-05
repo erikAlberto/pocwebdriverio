@@ -1,4 +1,4 @@
-import { suma } from "../utils/for_testing";
+import { suma } from "../../../src/utils/for_testing";
 
 describe('sum to numbers', () => {
     test('suma', () => {
