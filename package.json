@@ -2,6 +2,9 @@
   "name": "my-new-project",
   "type": "module",
   "devDependencies": {
+    "@types/jest": "^29.5.2",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
     "@wdio/allure-reporter": "^8.8.7",
     "@wdio/cli": "^8.6.8",
     "@wdio/cucumber-framework": "^8.6.8",
@@ -9,14 +12,17 @@
     "@wdio/spec-reporter": "^8.6.8",
     "allure-commandline": "^2.22.0",
     "chromedriver": "^113.0.0",
+    "eslint": "^8.41.0",
+    "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.2",
     "wdio-chromedriver-service": "^8.1.1"
   },
   "scripts": {
+    "unit-test": "jest --forceExit --coverage --verbose",
+    "lint": "eslint . --ext .ts",
     "wdio": "wdio run ./wdio.conf.ts",
     "report": "allure generate allure-results --clean && allure open"
   },
   "keywords": [],
-  "author": ""
+  "author": "Erik Vargas"
 }
